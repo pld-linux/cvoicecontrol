@@ -10,7 +10,7 @@ Patch0:		%{name}-make.patch
 URL:		http://www.kiecza.de/daniel/linux/
 BuildRequires:  autoconf
 BuildRequires:  automake
-BuildRequires:  textinfo
+BuildRequires:  texinfo
 BuildRequires:  ncurses-devel >= 5.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -40,7 +40,7 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_docdir}}
 install cvoicecontrol/cvoicecontrol  $RPM_BUILD_ROOT%{_bindir}
 install cvoicecontrol/model_editor  $RPM_BUILD_ROOT%{_bindir}
 install cvoicecontrol/microphone_config  $RPM_BUILD_ROOT%{_bindir}
-install cvoicecontrol/docs/en/index*    $RPM_BUILD_ROOT%{_docdir}
+install cvoicecontrol/docs/en/index*.html    $RPM_BUILD_ROOT%{_docdir}
 
 
 gzip -9nf AUTHORS BUGS COPYING FAQ INSTALL README 
