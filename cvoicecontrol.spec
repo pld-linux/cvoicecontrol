@@ -4,23 +4,23 @@ Name:		cvoicecontrol
 Version:	0.9alpha
 Release:	3
 License:	GPL
-Group:		Applications/Tools
+Group:		Applications/Sound
 Source0:	http://www.kiecza.de/daniel/linux/%{name}-%{version}.tar.gz
 Patch0:		%{name}-make.patch
 URL:		http://www.kiecza.de/daniel/linux/
-BuildRequires:  autoconf
-BuildRequires:  automake
-BuildRequires:  texinfo
-BuildRequires:  pth
-BuildRequires:  ncurses-devel >= 5.2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	texinfo
+BuildRequires:	pth
+BuildRequires:	ncurses-devel >= 5.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 CVoiceControl is a speech recognition system that enables a user to
-connect spoken commands to unix commands.  It automagically detects
+connect spoken commands to unix commands. It automagically detects
 speech input from a microphone, performs recognition on this input and
 in case of successful recognition - executes the associated unix
-command. 
+command.
 
 %description -l pl
 CVoiceControl jest narzêdziem do rozpoznawania mowy i umo¿liwia
