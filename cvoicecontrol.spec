@@ -50,5 +50,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz docs/en/index*.html
+%doc *.gz cvoicecontrol/docs/en/index*.html
 %attr(755,root,root) %{_bindir}/*
