@@ -8,6 +8,10 @@ Group:		Applications/Tools
 Source0:	http://www.kiecza.de/daniel/linux/cvoicecontrol-0.9alpha.tar.gz
 Patch0:		%{name}-make.patch
 URL:		http://www.kiecza.de/daniel/linux/
+BuildRequires:  autoconf
+BuildRequires:  automake
+BuildRequires:  textinfo
+BuildRequires:  ncurses-devel >= 5.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
