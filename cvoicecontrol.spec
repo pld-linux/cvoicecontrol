@@ -2,7 +2,7 @@ Summary:	CVoiceControl is a speech recognition system enabling to use spoken com
 Summary(pl):	CVoiceControl jest narzêdziem do wydawania poleceñ przy pomocy mowy
 Name:		cvoicecontrol
 Version:	0.9alpha
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Tools
 Source0:	http://www.kiecza.de/daniel/linux/%{name}-%{version}.tar.gz
@@ -11,6 +11,7 @@ URL:		http://www.kiecza.de/daniel/linux/
 BuildRequires:  autoconf
 BuildRequires:  automake
 BuildRequires:  texinfo
+BuildRequires:  pth
 BuildRequires:  ncurses-devel >= 5.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
