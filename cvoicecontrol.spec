@@ -6,6 +6,7 @@ Release:	5
 License:	GPL
 Group:		Applications/Sound
 Source0:	http://www.kiecza.de/daniel/linux/%{name}-%{version}.tar.gz
+# Source0-md5:	19df71e7e4d246450a60519a8c31b953
 Patch0:		%{name}-make.patch
 URL:		http://www.kiecza.de/daniel/linux/
 BuildRequires:	autoconf
