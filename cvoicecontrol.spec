@@ -5,7 +5,7 @@ Version:	0.9alpha
 Release:	1
 License:	GPL
 Group:		Applications/Tools
-Source0:	http://www.kiecza.de/daniel/linux/%{name]-%{version}.tar.gz
+Source0:	http://www.kiecza.de/daniel/linux/%{name}-%{version}.tar.gz
 Patch0:		%{name}-make.patch
 URL:		http://www.kiecza.de/daniel/linux/
 BuildRequires:  autoconf
