@@ -17,6 +17,8 @@ It automagically detects speech input from a microphone, performs recognition on
 in case of successful recognition - executes the associated unix command. 
 
 %description -l pl
+CVoiceControl jest narzedziem do rozpoznawania mowy i umozliwia wydawanie polecen komputerowi
+przez mikrofon .
 
 %prep
 %setup -q -n %{name}-%{version}
