@@ -1,0 +1,60 @@
+diff -ruN cvoicecontrol-0.9alpha/configure cvoicecontrol-0.9alpha.orig/configure
+--- cvoicecontrol-0.9alpha/configure	Mon Feb 21 11:18:45 2000
++++ cvoicecontrol-0.9alpha.orig/configure	Thu Mar 14 18:58:41 2002
+@@ -1187,7 +1187,7 @@
+ fi
+ echo "$ac_t""$CPP" 1>&6
+ 
+-for ac_hdr in fcntl.h glob.h math.h ncurses.h pthread.h signal.h stdio.h stdlib.h string.h sys/ioctl.h sys/select.h sys/soundcard.h sys/time.h sys/types.h termios.h time.h unistd.h
++for ac_hdr in fcntl.h glob.h math.h ncurses/ncurses.h pthread.h signal.h stdio.h stdlib.h string.h sys/ioctl.h sys/select.h sys/soundcard.h sys/time.h sys/types.h termios.h time.h unistd.h
+ do
+ ac_safe=`echo "$ac_hdr" | sed 'y%./+-%__p_%'`
+ echo $ac_n "checking for $ac_hdr""... $ac_c" 1>&6
+diff -ruN cvoicecontrol-0.9alpha/cvoicecontrol/cvoicecontrol.c cvoicecontrol-0.9alpha.orig/cvoicecontrol/cvoicecontrol.c
+--- cvoicecontrol-0.9alpha/cvoicecontrol/cvoicecontrol.c	Thu Feb 17 23:59:41 2000
++++ cvoicecontrol-0.9alpha.orig/cvoicecontrol/cvoicecontrol.c	Thu Mar 14 18:54:50 2002
+@@ -20,7 +20,7 @@
+ #include<stdio.h>
+ #include<stdlib.h>
+ #include<string.h>
+-
++#include<values.h>
+ #include<math.h>
+ 
+ #include<pthread.h>
+diff -ruN cvoicecontrol-0.9alpha/cvoicecontrol/microphone_config.c cvoicecontrol-0.9alpha.orig/cvoicecontrol/microphone_config.c
+--- cvoicecontrol-0.9alpha/cvoicecontrol/microphone_config.c	Sat Feb 19 13:08:47 2000
++++ cvoicecontrol-0.9alpha.orig/cvoicecontrol/microphone_config.c	Thu Mar 14 18:55:11 2002
+@@ -18,7 +18,7 @@
+ 
+ #define MAIN_C
+ 
+-#include <ncurses.h>
++#include <ncurses/ncurses.h>
+ #include <signal.h>
+ #include <stdlib.h>
+ #include <string.h>
+diff -ruN cvoicecontrol-0.9alpha/cvoicecontrol/model_editor.c cvoicecontrol-0.9alpha.orig/cvoicecontrol/model_editor.c
+--- cvoicecontrol-0.9alpha/cvoicecontrol/model_editor.c	Sat Feb 19 12:56:01 2000
++++ cvoicecontrol-0.9alpha.orig/cvoicecontrol/model_editor.c	Thu Mar 14 18:55:26 2002
+@@ -17,7 +17,7 @@
+ 
+ #define MAIN_C
+ 
+-#include <ncurses.h>
++#include <ncurses/ncurses.h>
+ #include <signal.h>
+ #include <stdlib.h>
+ #include <string.h>
+diff -ruN cvoicecontrol-0.9alpha/cvoicecontrol/ncurses_tools.c cvoicecontrol-0.9alpha.orig/cvoicecontrol/ncurses_tools.c
+--- cvoicecontrol-0.9alpha/cvoicecontrol/ncurses_tools.c	Sat Feb 12 17:06:29 2000
++++ cvoicecontrol-0.9alpha.orig/cvoicecontrol/ncurses_tools.c	Thu Mar 14 18:55:51 2002
+@@ -25,7 +25,7 @@
+  * released under the GNU General Public License
+  ********************************************************************************/
+ 
+-#include <ncurses.h>
++#include <ncurses/ncurses.h>
+ 
+ #include <stdlib.h>
+ #include <string.h>
