@@ -19,20 +19,23 @@ in case of successful recognition - executes the associated unix command.
 %description -l pl
 
 %prep
-%setup -q -n %{name}_%{version}
-%patch0 -p0
+%setup -q -n %{name}-%{version}
+%patch0 -p1
 
 %build
-%configure
+./configure
 
 %{__make} CFLAGS="%{rpmcflags} " CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_docdir}}
 
-%{__make} install \
-	      PREFIX=$RPM_BUILD_ROOT
+install cvoicecontrol/cvoicecontrol  $RPM_BUILD_ROOT%{_bindir}
+install cvoicecontrol/model_editor  $RPM_BUILD_ROOT%{_bindir}
+install cvoicecontrol/microphone_config  $RPM_BUILD_ROOT%{_bindir}
+install cvoicecontrol/docs/en/index*    $RPM_BUILD_ROOT%{_docdir}
+
 
 gzip -9nf AUTHORS BUGS COPYING FAQ INSTALL README 
 
