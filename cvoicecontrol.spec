@@ -43,7 +43,7 @@ install cvoicecontrol/cvoicecontrol  $RPM_BUILD_ROOT%{_bindir}
 install cvoicecontrol/model_editor  $RPM_BUILD_ROOT%{_bindir}
 install cvoicecontrol/microphone_config  $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9nf AUTHORS BUGS COPYING FAQ INSTALL README 
+gzip -9nf AUTHORS BUGS FAQ README 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
