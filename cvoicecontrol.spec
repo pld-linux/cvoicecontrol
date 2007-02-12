@@ -1,5 +1,5 @@
 Summary:	CVoiceControl is a speech recognition system enabling to use spoken commands
-Summary(pl):	CVoiceControl jest narzêdziem do wydawania poleceñ przy pomocy mowy
+Summary(pl.UTF-8):   CVoiceControl jest narzÄ™dziem do wydawania poleceÅ„ przy pomocy mowy
 Name:		cvoicecontrol
 Version:	0.9alpha
 Release:	5
@@ -23,9 +23,9 @@ speech input from a microphone, performs recognition on this input and
 in case of successful recognition - executes the associated unix
 command.
 
-%description -l pl
-CVoiceControl jest narzêdziem do rozpoznawania mowy i umo¿liwia
-wydawanie poleceñ komputerowi przez mikrofon.
+%description -l pl.UTF-8
+CVoiceControl jest narzÄ™dziem do rozpoznawania mowy i umoÅ¼liwia
+wydawanie poleceÅ„ komputerowi przez mikrofon.
 
 %prep
 %setup -q
