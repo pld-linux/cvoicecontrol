@@ -18,9 +18,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 CVoiceControl is a speech recognition system that enables a user to
-connect spoken commands to unix commands. It automagically detects
+connect spoken commands to Unix commands. It automagically detects
 speech input from a microphone, performs recognition on this input and
-in case of successful recognition - executes the associated unix
+in case of successful recognition - executes the associated Unix
 command.
 
 %description -l pl.UTF-8
